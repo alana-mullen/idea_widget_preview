@@ -92,7 +92,7 @@ class _ExtractorVisitor extends RecursiveAstVisitor<dynamic> {
 
   @override
   dynamic visitClassDeclaration(ClassDeclaration node) {
-    final classname = node.name2.toString();
+    final classname = node.name.toString();
 
     final foundExtends = _firstExtendsOrNull(node);
     if (foundExtends != null) {

@@ -45,7 +45,7 @@ class _GenericExtractVisitor extends RecursiveAstVisitor<dynamic> {
   });
 
   String? _getGenericMappedPreviewType(NamedType namedType) {
-    if (namedType.name.toString() != 'ToPreviewProvider') {
+    if (namedType.name2.toString() != 'ToPreviewProvider') {
       return null;
     }
 
@@ -71,7 +71,7 @@ class _GenericExtractVisitor extends RecursiveAstVisitor<dynamic> {
 
   @override
   dynamic visitClassDeclaration(ClassDeclaration node) {
-    final classname = node.name2.toString();
+    final classname = node.name.toString();
 
     // both implements and extends are technically correct,
     // because this is an abstract class
