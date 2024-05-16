@@ -235,7 +235,7 @@ class _Preview extends HookWidget {
                 if (groupName != null)
                   Text(
                     groupName,
-                    style: Theme.of(context).textTheme.bodyText1?.copyWith(
+                    style: Theme.of(context).textTheme.bodyLarge?.copyWith(
                           fontSize: 8,
                           color: textColor,
                         ),
@@ -243,7 +243,7 @@ class _Preview extends HookWidget {
                   ),
                 Text(
                   title,
-                  style: Theme.of(context).textTheme.bodyText1?.copyWith(
+                  style: Theme.of(context).textTheme.bodyLarge?.copyWith(
                         fontSize: 12,
                         color: textColor,
                       ),
@@ -252,7 +252,7 @@ class _Preview extends HookWidget {
                 if (subText != null)
                   Text(
                     subText,
-                    style: Theme.of(context).textTheme.bodyText1?.copyWith(
+                    style: Theme.of(context).textTheme.bodyLarge?.copyWith(
                           fontWeight: FontWeight.bold,
                           fontSize: 7,
                           color: textColor,

@@ -51,7 +51,7 @@ class ScaleController extends StatelessWidget {
       children: [
         Text(
           "x${scale.toStringAsFixed(2)}",
-          style: Theme.of(context).textTheme.bodyText1?.copyWith(
+          style: Theme.of(context).textTheme.bodyLarge?.copyWith(
                 fontSize: 12,
                 color: iconColor,
               ),
